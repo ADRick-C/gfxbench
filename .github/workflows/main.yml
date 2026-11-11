@@ -227,9 +227,10 @@ jobs:
           ./scripts/build.sh
 
       - name: Build Android APK
-        if: ${{ matrix.platform == 'android' && (inputs.platform == 'android' || inputs.platform == 'both') }}
+        if: ${{ matrix.platform == 'android' }}
         run: |
-          ./scripts/build-multiarch-apk.sh
+          BUNDLE_DATA=true ./scripts/build-multiarch-apk.sh
+          
 
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
