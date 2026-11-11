@@ -235,7 +235,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
             name: GFXBench-Android-APK
-            path: "**/*.apk.apk"
+            path: "**/*.apk"
 
         
           
