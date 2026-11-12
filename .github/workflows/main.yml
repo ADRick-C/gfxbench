@@ -229,7 +229,7 @@ jobs:
       - name: Build Android APK
         if: ${{ matrix.platform == 'android' }}
         run: |
-          BUNDLE_DATA=true ./scripts/build-multiarch-apk.sh
+          GFX_TESTS=all BUNDLE_DATA=true ./scripts/build-multiarch-apk.sh
           
 
       - name: Upload APK Artifact
