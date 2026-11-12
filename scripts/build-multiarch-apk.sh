@@ -4,8 +4,8 @@
 : ${WORKSPACE?" not set"}
 
 # default values
-: ${PLATFORMS:="android-armv7a android-x86 android-arm64-v8a android-x86-64"}
-: ${COMMUNITY_BUILD:="false"}
+: ${PLATFORMS:="android-arm64-v8a"}
+: ${COMMUNITY_BUILD:="true"}
 : ${BUILD_THIRDPARTY:="true"}
 
 if [ "$STORE_VERSION" = "true" ]; then
